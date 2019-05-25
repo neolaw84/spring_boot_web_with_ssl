@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -13,6 +14,7 @@ import space.qbpo.secured.web.one.SwoController.SwoIntegerObject;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
+@ActiveProfiles(profiles= {"default", "noclientauth"})
 public class SwoControllerViaRestTests {
 	
 	@Autowired RestTemplateBuilder restTemplateBuilder;
