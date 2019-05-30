@@ -21,9 +21,8 @@ public class SwoControllerViaRestTests {
 	
 	/**
 	 * This test case requires the followings to be put as VM Arguments:
-	 * 
 	 * -Djavax.net.ssl.trustStore="full/path/to/cacerts" -Djavax.net.ssl.trustStorePassword="password"
-	 * the one in git repo has certificate for 'localhost' with password 'changeit'
+	 * the one in git repo (src/main/resources/certs3/node22.jks has certificate for 'localhost' with password 'abcd1234'
 	 */
 	@Test
 	public void addTwoAndFive() {
