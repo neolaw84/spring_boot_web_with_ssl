@@ -24,7 +24,7 @@ import space.qbpo.secured.web.one.SwoController.SwoIntegerObject;
 @Import(value= {SwoService.class})
 public class SwoControllerTests {
 	@Autowired private MockMvc mvc;
-	@Autowired SwoService sWOService; 
+	@Autowired SwoService swoService; 
 	@Autowired ObjectMapper objectMapper;
 	
 	@Test

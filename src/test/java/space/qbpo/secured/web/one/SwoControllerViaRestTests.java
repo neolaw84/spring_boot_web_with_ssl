@@ -14,7 +14,7 @@ import space.qbpo.secured.web.one.SwoController.SwoIntegerObject;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-@ActiveProfiles(profiles= {"default", "noclientauth"})
+@ActiveProfiles(profiles= {"default"})
 public class SwoControllerViaRestTests {
 	
 	@Autowired RestTemplateBuilder restTemplateBuilder;
