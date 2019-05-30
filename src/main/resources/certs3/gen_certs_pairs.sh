@@ -25,10 +25,10 @@ echo "generating certificate 2 signed by key 2"
 openssl x509 -req -days 3650 -in node2.csr -signkey node2.key -out node22.crt
 
 echo "generating trust-store 2 containing certificate 1 signed by key 2"
-keytool -import -file node1.crt -alias node1 -keystore node2.jks
+keytool -import -file node11.crt -alias node11 -keystore node22.jks
 
 echo "generating trust-store 1 containing certificate 2 signed by key 1"
-keytool -import -file node2.crt -alias node2 -keystore node1.jks
+keytool -import -file node22.crt -alias node22 -keystore node11.jks
 
 echo "generating key-store 1 containing certificate 1 signed by key 1"
 openssl pkcs12 -export -in node11.crt -inkey node1.key -name "node1" -out node1.p12
