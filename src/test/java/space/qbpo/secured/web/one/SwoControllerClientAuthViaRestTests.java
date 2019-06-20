@@ -58,6 +58,8 @@ public class SwoControllerClientAuthViaRestTests {
 	 * the "node2.jks" in git repo has certificate for 'localhost' with password 'changeit'
 	 * @throws Exception 
 	 * @throws RestClientException 
+	 * 
+	 * Equivalent is: curl -k https://localhost:8443/integer/add_two/?a=5&b=2 -E node22.crt --key node2.key
 	 */
 	@Test
 	public void addTwoAndFive() throws RestClientException, Exception {
